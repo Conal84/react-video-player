@@ -9,6 +9,10 @@ class SearchBar extends React.Component {
 
   onFormSubmit = (event) => {
     event.preventDefault();
+    {
+      /* Access the function passed down in props and call it */
+    }
+    this.props.onFormSubmit(this.state.term);
   };
 
   render() {
